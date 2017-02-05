@@ -2,7 +2,7 @@
 
 /* Controllers */
 
-angular.module('myApp.controllers', []).
+angular.module('guiCrawler.controllers', []).
   controller('AppCtrl', function ($scope, socket) {
     socket.on('send:name', function (data) {
       $scope.name = data.name;

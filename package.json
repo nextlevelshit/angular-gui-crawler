@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "express": "~3.2.6",
+    "opn": "^4.0.2",
     "pug": "^2.0.0-beta11",
     "socket.io": "~0.9.16"
   },

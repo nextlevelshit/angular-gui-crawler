@@ -2,13 +2,13 @@
 
 // Declare app level module which depends on filters, and services
 
-angular.module('myApp', [
+angular.module('guiCrawler', [
   'ngRoute',
 
-  'myApp.controllers',
-  'myApp.filters',
-  'myApp.services',
-  'myApp.directives',
+  'guiCrawler.controllers',
+  'guiCrawler.filters',
+  'guiCrawler.services',
+  'guiCrawler.directives',
 
   // 3rd party dependencies
   'btford.socket-io'
