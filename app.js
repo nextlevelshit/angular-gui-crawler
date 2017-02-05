@@ -20,7 +20,7 @@ var io = require('socket.io').listen(server);
 // all environments
 app.set('port', process.env.PORT || 3000);
 app.set('views', __dirname + '/views');
-app.set('view engine', 'jade');
+app.set('view engine', 'pug');
 app.use(express.logger('dev'));
 app.use(express.bodyParser());
 app.use(express.methodOverride());
@@ -61,4 +61,5 @@ io.sockets.on('connection', require('./routes/socket'));
 
 server.listen(app.get('port'), function () {
   console.log('Express server listening on port ' + app.get('port'));
+  opn();
 });

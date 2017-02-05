@@ -71,11 +71,11 @@ illustrate using the seed.
     routes/
       index.js              --> route for serving HTML pages and partials
     views/
-      index.jade            --> main page for app
-      layout.jade           --> doctype, title, head boilerplate
+      index.pug            --> main page for app
+      layout.pug           --> doctype, title, head boilerplate
       partials/             --> angular view partials (partial jade templates)
-        partial1.jade
-        partial2.jade
+        partial1.pug
+        partial2.pug
 
 
 
