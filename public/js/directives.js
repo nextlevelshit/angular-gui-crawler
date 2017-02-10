@@ -1,10 +1,29 @@
-'use strict';
+/**
+ * @ngdoc directive
+ * @element appVersion
+ * @name guiCrawlerApp.directive:appVersion
+ * @restrict A
+ * @description
+ *
+ */
 
-/* Directives */
+(function() {
+  'use strict';
 
-angular.module('guiCrawler.directives', []).
-  directive('appVersion', function (version) {
-    return function(scope, elm, attrs) {
-      elm.text(version);
+  angular
+      .module('guiCrawlerApp')
+      .directive('appVersion', appVersion);
+
+  function appVersion(version) {
+
+    return {
+      link: linkFn,
+      restrict: 'A',
+      scope: false
     };
-  });
+
+    function linkFn(scope, element, attrs) {
+      element.text(version);
+    };
+  }
+});

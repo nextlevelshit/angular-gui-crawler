@@ -8,7 +8,8 @@ var express = require('express'),
     api = require('./routes/api'),
     http = require('http'),
     path = require('path'),
-    opn = require('opn');
+    opn = require('opn'),
+    socket = require('./routes/socket.js');
 
 var app = module.exports = express();
 var server = require('http').createServer(app);
@@ -22,7 +23,7 @@ var io = require('socket.io').listen(server);
 app.set('port', process.env.PORT || 3000);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'pug');
-app.use(express.logger('dev'));
+// app.use(express.logger('dev'));
 app.use(express.bodyParser());
 app.use(express.methodOverride());
 app.use(express.static(path.join(__dirname, 'public')));
@@ -54,7 +55,7 @@ app.get('/api/name', api.name);
 app.get('*', routes.index);
 
 // Socket.io Communication
-io.sockets.on('connection', require('./routes/socket'));
+io.sockets.on('connection', socket);
 
 /**
  * Start Server

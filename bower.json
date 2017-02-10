@@ -1,14 +1,26 @@
 {
   "name": "angular-gui-crawler",
-  "version": "0.0.0",
+  "version": "0.1.0",
+  "main": "gulpfile.js",
+  "author": "Michael Czechowski <mail@dailysh.it>",
+  "license": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
   "ignore": [
     "**/.*",
     "node_modules",
-    "components"
+    "public/bower_components"
   ],
   "dependencies": {
-    "angular": "~1.2.14",
-    "angular-socket-io": "~0.3.0",
-    "angular-route": "~1.2.14"
+    "angular": "^1.6.2",
+    "angular-socket-io": "^0.7.0",
+    "angular-route": "^1.6.2"
+  },
+  "resolutions": {
+    "angular": "^1.6.2",
+    "angular-socket-io": "^0.7.0",
+    "angular-route": "^1.6.2"
   }
 }

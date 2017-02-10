@@ -1,11 +1,13 @@
 {
   "name": "angular-gui-crawler",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
     "express": "~3.2.6",
+    "lodash": "^4.17.4",
     "opn": "^4.0.2",
     "pug": "^2.0.0-beta11",
+    "sleep": "^5.1.0",
     "socket.io": "~0.9.16"
   },
   "devDependencies": {
