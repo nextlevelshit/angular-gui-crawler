@@ -7,18 +7,20 @@ Watch your Crawler in realtime, start and pause it like you want. Configure for 
 
 ### Installation
 
-_You will need `git` and `node` installed on your machine. Otherwise look for setting up a development environment: 
-[Beginner Setup for Mac OSX](http://burnedpixel.com/blog/beginners-setup-guide-for-ruby-node-git-github-oan-your-mac/)
-[Beginner Setup for Linux Users](http://nodeguide.com/beginner.html)_
-[git Beginner Guide](http://rogerdudler.github.io/git-guide/)
+_You will need `git` and `node` installed on your machine. Otherwise look for setting up a development environment:_
 
-1. Clone the angular-gui-crawler repository:
+- [Beginner Setup for Mac OSX](http://burnedpixel.com/blog/beginners-setup-guide-for-ruby-node-git-github-oan-your-mac/)
+- [Beginner Setup for Linux Users](http://nodeguide.com/beginner.html)
+- [git Beginner Guide](http://rogerdudler.github.io/git-guide/)
+
+Clone the angular-gui-crawler repository:
 
 ```shell
 git clone git@github.com:nextlevelshit/angular-gui-crawler.git
 ```
 
-2. Resolve dependencies:
+Resolve dependencies:
+
 ```shell
 cd angular-gui-crawler
 npm install && bower install
